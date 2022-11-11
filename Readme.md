@@ -11,7 +11,7 @@
 *   [x] create form.php file
 *   [x] open PHP as required in writing PHP code 
 
-```plaintext
+```php
 <?php
 ...
 ?>
@@ -19,7 +19,7 @@
 
 *   [x] create variables gotten from the html form
 
-```css
+```php
 $name = $_POST['name'];
 
 $email = $_POST['email'];
@@ -49,7 +49,7 @@ $boundary = md5("random");
 
 *   [x] Let's define the mailing variable
 
-```plaintext
+```php
 
 $from = "application@mydomainname.com"; //the mail u will be using to send the form
 $to = "yourmailer@example.com"; //the mail you will be using to recieve
@@ -102,7 +102,7 @@ $body .= $file_upload_encoded_content;
 
 <img src="images/5.jpg">
 
-```plaintext
+```php
 
 //this should be init i.e at the top of ur codes
 
@@ -115,7 +115,7 @@ error_reporting( E_ALL ); //getting logs
 
 12\. submitting the form
 
-```plaintext
+```php
 
 mail($to, $subject, $body, $headers);
 echo "Your Message Has Been Sent Successfully";
@@ -124,7 +124,7 @@ echo "Thank You";
 
 ### Complete Code
 
-```plaintext
+```php
 <?php
 //this should be init i.e at the top of ur codes
 
